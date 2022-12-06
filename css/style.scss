@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("friends.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* #AD1AAF hover*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .text {
+        text-align: center;
+        color: white;
+        position: relative;
+        margin-top: 4rem;
+        
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .button .submit-btn {
+            min-width: 300px;
+            height: 50px;
+            font-size: 18px;
+            font-weight: 800;
+            color: white;
+            background: transparent;
+            border: 1px solid white;
+            transition: 1s;
+        }
+        .button .submit-btn:hover {
+            background-color: crimson;
+        }
+    }
+
+    .photo img {
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+        margin-top: 5em;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        flex-direction: column;
+
+        .text {
+            margin-top: 5em;
+            text-align: justify;
+            padding: 20px;
+
+            h1 {
+                text-align: center;
+            } 
+        }
+    
+    }
+      
+    @media screen and (max-width: 600px) {
+        .container {
+            flex-direction: column;
+            
+            .left-column {
+                margin-top: 4em;
+                padding: 20px;
+                text-align: justify;
+
+                
+                
+            }
+        }
+    }
+}
