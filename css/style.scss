@@ -7,18 +7,23 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url("friends.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
 }
 /* #AD1AAF hover*/
-.container {
+.global-container {
+    width: fit-content;
+}
+
+.container1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
+    flex-direction: column;    
+    background: url("friends.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
     .text {
         text-align: center;
         color: white;
@@ -55,7 +60,7 @@ body {
 }
 
 @media screen and (max-width: 990px) {
-    .container {
+    .container1 {
         flex-direction: column;
 
         .text {
@@ -71,7 +76,7 @@ body {
     }
       
     @media screen and (max-width: 600px) {
-        .container {
+        .container1 {
             flex-direction: column;
             
             .left-column {
@@ -82,3 +87,31 @@ body {
         }
     }
 }
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 25px;
+    
+    .block1 img {
+        display: block;
+        margin: auto; 
+        height: 5rem; 
+    }
+    .block2 img {
+        display: block;
+        margin: auto;  
+        height: 5rem; 
+    }
+    .block3 img {
+        display: block;
+        margin: auto; 
+        height: 5rem;  
+    }
+    
+}
+
