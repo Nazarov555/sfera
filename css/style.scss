@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;    
-    background: url("friends.jpg");
+    background: url("assets/friends.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -91,7 +91,7 @@ body {
 .container2 {
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     padding-top: 90px;
@@ -115,3 +115,10 @@ body {
     
 }
 
+.container3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top: 10em;
+}

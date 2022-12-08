@@ -31,7 +31,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("friends.jpg");
+  background: url("assets/friends.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -118,9 +118,9 @@ body {
   display: grid;
   -ms-grid-columns: (400px)[3];
       grid-template-columns: repeat(3, 400px);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -145,5 +145,19 @@ body {
   display: block;
   margin: auto;
   height: 5rem;
+}
+
+.container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 10em;
 }
 /*# sourceMappingURL=style.css.map */
